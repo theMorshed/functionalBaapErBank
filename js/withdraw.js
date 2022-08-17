@@ -12,8 +12,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         alert('You dont have enough money to withdraw!!!');
     }
     else {
-        withdrawDisplayBox.innerText = withdrawValue + withdrawDispalyValue;
-        const balance = balanceOldValue - withdrawValue;
-        balanceDisplayBox.innerText = balance;
+        if (withdrawValue !== undefined) {
+            withdrawDisplayBox.innerText = withdrawValue + withdrawDispalyValue;
+            const balance = balanceOldValue - withdrawValue;
+            balanceDisplayBox.innerText = balance;
+        }
     }
 });

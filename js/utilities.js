@@ -7,6 +7,7 @@ function getValue(fieldId) {
         if (isNaN(elementString) || elementString === '') {
             alert('Please enter a valid number.');
             element.value = '';
+            return undefined;
         }
         const elementValue = parseFloat(elementString);
         element.value = '';
@@ -26,7 +27,7 @@ function getInputFieldValueById(fieldId) {
     if (isNaN(elementString) || elementString === '') {
         alert('Please enter a valid number.');
         element.value = '';
-        return;
+        return undefined;
     }
     const elementValue = parseFloat(elementString);
     element.value = '';
