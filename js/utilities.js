@@ -1,4 +1,5 @@
 // one function for get value of both input field or html tag
+/************
 function getValue(fieldId) {
     const element = document.getElementById(fieldId);
     if (element.tagName.toLowerCase() === 'input') {
@@ -16,6 +17,8 @@ function getValue(fieldId) {
         return elementValue;
     }
 }
+****************/
+
 // get input field value function 
 function getInputFieldValueById(fieldId) {
     const element = document.getElementById(fieldId);
