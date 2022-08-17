@@ -11,7 +11,9 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     const balance = getHTMLElementValueById('balance');
 
     // sum the both deposit old and new value and show this in deposit display area
-    const totalDeposit = deposit + depositOldValue;
-    depositDisplayBox.innerText = totalDeposit;
-    balanceDisplayBox.innerText = balance + deposit;
+    if (deposit !== undefined) {
+        const totalDeposit = deposit + depositOldValue;
+        depositDisplayBox.innerText = totalDeposit;
+        balanceDisplayBox.innerText = balance + deposit;
+    }
 });
